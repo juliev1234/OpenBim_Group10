@@ -1,3 +1,5 @@
+#Remember to change the directory path in line 29
+
 import bpy
 import ifcopenshell
 import ifcopenshell.util.element
