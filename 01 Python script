@@ -1,0 +1,40 @@
+import bpy
+import ifcopenshell
+import ifcopenshell.util.element
+from blenderbim.bim.ifc import IfcStore
+
+#Retrive imported IFC file from blender
+file = IfcStore.get_file()
+
+#Making a sortet list of footing dimmensions        
+footing_list = []
+Heading = ["Footing id", "Width","Thickness","Length","Volume"]
+
+footing_list.append(Heading)
+
+for footing in footings:
+    data = [footing.id(),
+            ifcopenshell.util.element.get_psets(footing)["PSet_Revit_Dimensions"]["Width"],
+            ifcopenshell.util.element.get_psets(footing)["PSet_Revit_Type_Dimensions"]["Foundation Thickness"],
+            ifcopenshell.util.element.get_psets(footing)["PSet_Revit_Dimensions"]["Length"],
+            ifcopenshell.util.element.get_psets(footing)["PSet_Revit_Dimensions"]["Volume"]]
+    footing_list.append(data)
+
+#Saves the list as an TXT file
+textfile = open("C:/Users/filip/Desktop/FootingData.txt","w")
+
+for i in range(len(footing_list)):
+    textfile.write(str(footing_list[i]))
+    textfile.write("\n")
+ 
+textfile.close()
+
+# Number and volume of footings are found adn printed
+footings = file.by_type('IfcFooting')
+print("There is " + str(len(footings)) + " footings.")
+
+volume = 0
+for footing in footings:
+    psets = ifcopenshell.util.element.get_psets(footing)["PSet_Revit_Dimensions"]["Volume"]
+    volume += psets
+print("The total volume of the footings is " + str(round(volume,2)) + " m^3.")
