@@ -6,6 +6,9 @@ from blenderbim.bim.ifc import IfcStore
 #Retrive imported IFC file from blender
 file = IfcStore.get_file()
 
+#Footings are defined
+footings = file.by_type('IfcFooting')
+
 #Making a sortet list of footing dimmensions        
 footing_list = []
 Heading = ["Footing id", "Width","Thickness","Length","Volume"]
@@ -29,8 +32,7 @@ for i in range(len(footing_list)):
  
 textfile.close()
 
-# Number and volume of footings are found adn printed
-footings = file.by_type('IfcFooting')
+# Number and volume of footings are found and printed
 print("There is " + str(len(footings)) + " footings.")
 
 volume = 0
