@@ -31,3 +31,7 @@ The input data for our use case is the dimensions of load bearing elements and t
 
 ### What other use cases are waiting for your use case to complete?
 The uses cases LCA, Code Validation and Cost Estimation are waiting for our use case to complete, since they need information about material properties and structural documentation. 
+
+### Future work
+Right now, the script can only find the dimensions and ID of the footing. In future work it would be great if the script also identifies the coordinates (x,y,z) of the elements with the purpose to set up the topology in a FEM-program. Furthermore, it would also be interesting to look at other bearing elements as beams, columns, and walls.  
+
