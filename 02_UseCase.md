@@ -1,4 +1,7 @@
-# A1-OpenBim - Group10
+# 41934 A1-OpenBim - Group10
+
+### Group members
+Filip Jacobi (s193840), Mikkel Grebin (s193846), Julie Vollmer (s193856)
 
 ### Describe the use case you have chosen
 The chosen use case is structural analysis. In the structural analysis, the load bearing elements and their dimensions and positions in the building can be found using IFC concepts. This information can be used to create the topology of the elements to then create a structural design model. The structural model can then be analyzed using FEM after the material properties have been defined. 
@@ -10,7 +13,8 @@ The use case is made for the client (bygherren) but also for the structural engi
 Knowledge about programming was needed to create a script that will help solve the use case. Furthermore, knowledge about load bearing elements and their material properties is needed. 
 
 ### What IFC concepts did you use in your script (would you use in your script)
-To get information about the load bearing elements, the IFC entity “IfcBuildingElement” was used to find information about “IfcFooting”, “IfcBeam” and “IfcWall”. The property sets were then found by importing “ifcopenshell.util.element” and using “get_psets”. This information was found from Revit Dimensions. 
+To get information about the load bearing elements, the IFC entity “IfcBuildingElement” was used to find information about “IfcFooting”, “IfcBeam” and “IfcWall”. The property sets were then found with "IfcPropertySet" by importing “ifcopenshell.util.element” and using “get_psets”. This information was found from the Revit model.
+
 To find the positions of the load bearing elements, the code “ifcopenshell.util.placement.get_local_placement(footing.ObjectPlacement)” might be useful.  
 
 ### What disciplinary analysis does it require?
