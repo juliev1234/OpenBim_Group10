@@ -1,7 +1,7 @@
-# A1_OpenBim_Group10
+# A1-OpenBim - Group10
 
 ### Describe the use case you have chosen
-The chosen use case is structural analysis. In the structural analysis, the load bearing elements and their dimensions and positions in the building can be found using IFC concepts. This information can be used to create the topology of the elements to analyze the structural model using FEM after the material properties have been defined. 
+The chosen use case is structural analysis. In the structural analysis, the load bearing elements and their dimensions and positions in the building can be found using IFC concepts. This information can be used to create the topology of the elements to then create a structural design model. The structural model can then be analyzed using FEM after the material properties have been defined. 
 
 ### Who is the use case for?
 The use case is made for the client (bygherren) but also for the structural engineers and architects. 
