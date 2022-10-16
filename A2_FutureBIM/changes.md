@@ -53,6 +53,7 @@ In the JavaScript line 42 has been added to the code to output the level specifi
 
 # Future work 
 The plan was also to include the dimensions together with other properties of the structural elements to get a nice overview of the structure and to easily get access to its information.  But it caused errors using the Ifcopenshell.util.element.get_psets for a custom entity in the HTMLBUILD.py and thereafter implementing it as data in the property box in the html-build.js. 
+
 Furthermore, it would be interesting to investigate the plan view in the future work. It could be nice to have a plan view of the structural elements when pressing the different plan views on the webpage, to have an indication of the location of the elements. In this context, the topology of the element would be relevant to illustrate as well. 
 
 
