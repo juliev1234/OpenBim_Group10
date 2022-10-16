@@ -26,7 +26,11 @@ We have added a title so that the website is called “Structural element detect
 ### Number of structural elements
 We have added descriptions about how many columns and beams there are in the building. This has been done by finding the number of ‘IfcBeam’ and ‘IfcWall’ by scripting and inserting these numbers in the properties box. 
 
-![alt text](https://github.com/juliev1234/OpenBim_Group10/blob/main/A2_FutureBIM/Pictures/structuralhtml.png)
+![alt text](https://github.com/juliev1234/OpenBim_Group10/blob/main/A2_FutureBIM/Pictures/structuralhtml1.png)
+![alt text](https://github.com/juliev1234/OpenBim_Group10/blob/main/A2_FutureBIM/Pictures/structuralhtml2.png)
+
+In the JavaScript the following code has been written to insert the total number of beams and walls:
+
 ![alt text](https://github.com/juliev1234/OpenBim_Group10/blob/main/A2_FutureBIM/Pictures/structuraljs.png)
 
 ### Level specific data 
@@ -35,10 +39,16 @@ The goal is also to display the number of walls, beams etc. pr. level, this has 
 #### Python:
 The following generates a dictionary containing the number of walls of each level.
 
+![alt text](https://github.com/juliev1234/OpenBim_Group10/blob/main/A2_FutureBIM/Pictures/levelhtml1.png)
+
 A for-loop made for each floor in the IFC file generates the following HTML code for the Java-script to handle.
+
+![alt text](https://github.com/juliev1234/OpenBim_Group10/blob/main/A2_FutureBIM/Pictures/levelhtml2.png)
 
 #### Java:
 In the JavaScript line 42 has been added to the code to output the level specific wall amount when pressing the level button. 
+
+![alt text](https://github.com/juliev1234/OpenBim_Group10/blob/main/A2_FutureBIM/Pictures/leveljs.png)
 
 
 
