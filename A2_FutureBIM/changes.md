@@ -29,6 +29,21 @@ We have added descriptions about how many columns and beams there are in the bui
 ![alt text](https://github.com/juliev1234/OpenBim_Group10/blob/main/A2_FutureBIM/Pictures/structuralhtml.png)
 ![alt text](https://github.com/juliev1234/OpenBim_Group10/blob/main/A2_FutureBIM/Pictures/structuraljs.png)
 
+### Level specific data 
+The goal is also to display the number of walls, beams etc. pr. level, this has been done and illustrated for the “walls-elements” by the following modification of the given code.
+
+#### Python:
+The following generates a dictionary containing the number of walls of each level.
+
+A for-loop made for each floor in the IFC file generates the following HTML code for the Java-script to handle.
+
+#### Java:
+In the JavaScript line 42 has been added to the code to output the level specific wall amount when pressing the level button. 
+
+
+
+
+
 # Trials 
 The plan was also to include the dimensions of structural elements to get a nice overview of the properties of the elements.  But it caused errors using the Ifcopenshell.util.element.get_psets for a costum entity in the HTMLBUILD.py and thereafter implementing it as data in the property box in the html-build.js. 
 
