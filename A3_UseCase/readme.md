@@ -35,7 +35,7 @@ The input of the tool is an IFC-file, and the output is a simplified topology of
 ## 3C: Information exchange
 
 ### 5) Information exchange
-The excel template is attached. The excel file fills out the structural elements needed in the tool: Foundations, columns, beams, floor, roof, and walls. LOR, LOG and LOI are all related to the level of detailing and are based on the essential information for a structural analysis. 
+The excel template can be seen [here](https://github.com/juliev1234/OpenBim_Group10/blob/main/A3_UseCase/Use_case_INFX_Team_10.xlsx). The excel file fills out the structural elements needed in the tool: Foundations, columns, beams, floor, roof, and walls. LOR, LOG and LOI are all related to the level of detailing and are based on the essential information for a structural analysis. 
 As the structural analysis is an iterative process, the value of LOR is generally 200, as both the location and levels can be changed if the analyze fails.
 Furthermore, it is assumed that the geometry of the structural elements isn’t fully determined either, as the choices of types can have an influence on both the loading and the CO2 emission. Therefore, the LOG is in general 200 as well. The properties are essential for the use case, which is the reason why LOI generally is 325. 
 
