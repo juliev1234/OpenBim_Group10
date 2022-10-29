@@ -42,15 +42,15 @@ Furthermore, it is assumed that the geometry of the structural elements isn’t 
 
 ### 6) IFC and data
 
--	IFC data
+-	IFC data:
 The IFC entities needed for the tool to function is: IfcFooting, IfcFoundation, ifcWall, IfcColumn and IfcBeam. 
 The properties needed for the entities are: Dimensions, Material properties and their coordinates.
 With this information the number of structural elements and coordinate data for the structural elements can be handled and sorted in the different material properties categories.
 
--	External sources
+-	External sources:
 A catalog with density of different materials, so the dead-load can be calculated based on the material’s properties and dimensions.
 
--	Assumptions 
+-	Assumptions:
 It is assumed that all the bearing elements found from the IFC entities are geometrically connected in order to set up the topology of the building. Bearing elements are simplified throughout the cross section so a homogeneous material from a density catalog can be assigned.
 
 
@@ -65,8 +65,18 @@ We don’t know if it makes the world better, but it will make the modeling phas
 
 ## 3E: Delivery
 
-### 9) Your tool/workflow: 
+### 9) Your tool/workflow
+Our tool would essentially need an IFC-file which includes a structural modelled building and a data sheet with material data as input. The tool would automatically sort and calculate the data received from the IFC-file and save a file with the topology and load data. Hereafter, it is ready to be analysed using a FEM-program.
 
+### 10) Delivery
+Step 1) (Input IFC file) Get an overview of the structural elements e.g. sort data into structural categories
+Step 2) Try out different methods to extract and sort dimensions and coordinate data.
+Step 3) Look at the different structural element independently e.g. footings, and find the coordinates and thereby the topology.
+Step 4) Calculate dead load and assign the value to the structural elements (This may be done by the already found coordinate from step 3)
+Step 5) Sort the calculated data from step 1, 2, 3 and 4 in a file that is readable for a FEM-program.
+
+#### Our delivery
+The described steps above are for the fully developed tool which is a lot of work. In our case we may simplify the tool to only look at one or more specific structural elements in order to complete all 5 steps.
 
 
 
