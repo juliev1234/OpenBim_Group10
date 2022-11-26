@@ -1,0 +1,1 @@
+The chosen use case is structural analysis. In the structural analysis, the load bearing elements and their dimensions and positions in the building can be found using IFC concepts. This information can be used to create the topology of the elements and create a structural design model.
