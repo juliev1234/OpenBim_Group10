@@ -4,3 +4,5 @@ The chosen use case is structural analysis. In the structural analysis, the load
 
 The video that shows the use case can be found here:
 
+# Future work
+
