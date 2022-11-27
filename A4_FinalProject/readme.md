@@ -2,8 +2,7 @@
 
 The chosen use case is structural analysis. In the structural analysis, the load bearing elements and their dimensions and positions in the building is found using IFC concepts. This information is used to create the topology of the elements and create a plot of the model. Furthermore, information about length, width, volume etc. are found. This is presented on a website to give a good overview of the structural elements and to make it possible for the user to enter the density of the materials. This way the self-weight of the elements can be calculated. 
 
-The video that shows the use case can be found here:
-[Here](https://www.youtube.com/watch?v=UIK1KJLiRRM)
+The video that shows the use case can be found [here](https://www.youtube.com/watch?v=UIK1KJLiRRM)
 
 ## BPMN for tool
 
