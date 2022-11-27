@@ -13,7 +13,7 @@ On the figure below, the flow chart illustrates our tool, and what we have achie
 ## BPMN for use case (large scale)
 
 The BPMN below shows the ideal chart for the original use case we had in mind. The green box is indicating what we have achieved with our tool. The rest of the chart shows our previous ideas and in which direction the tool can be developed.
-![alt text](https://github.com/juliev1234/OpenBim_Group10/blob/ae0d3e214ebe4d16f4a9d5249284aafb8c11b819/A4_FinalProject/img/BPMN_usecase.png)
+![alt text](https://github.com/juliev1234/OpenBim_Group10/blob/547489e9e8e25725c3c06d1f32349d2e3451a1c7/A4_FinalProject/img/BPMN_usecase.png)
 
 
 # Future work
