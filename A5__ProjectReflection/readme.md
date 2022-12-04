@@ -36,6 +36,6 @@ The project was clearly scoped to be a helpful preparation for a FEM program fro
 ### Are you likely to use OpenBIM tools in your thesis? Are you likely to use OpenBIM tools in your professional life in the next 10 years?
 As written before, we are not sure what we will do for our theses yet. However, we don’t expect to use OpenBIM tools in our theses at this time. It does seem like OpenBIM has many good qualities and possibilities, and therefore, it has been nice to get an introduction to OpenBIM and IFC-files so that we might use it in the future. 
 
-## Improvements
+## Improvements for tool
 
 From the peer review feedback, we got some more ideas on what to improve. For example, it would be cool if the program not only looked at self-weight but also weight from the other structural elements. Furthermore, it would be cool if the program could take into account whether the structural elements were defined incorrectly and tell the user.
