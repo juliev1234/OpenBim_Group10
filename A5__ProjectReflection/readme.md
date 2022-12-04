@@ -1,5 +1,5 @@
 
-# A5 Reflection report
+# A5: Project Reflection
 
 ### The process of creating the tool
 Creating the tool was quite difficult because our programming skills weren’t that good. It was challenging to find out how to present the tool. In the beginning we weren’t quite sure which platform we wanted to display the extracted information on. Therefore, the start process was confusing because the red thread was missing, and the script created were looking at too much stuff. However, in the end we found a good solution that showed the created plot, and we made a cool webpage.
